@@ -5,8 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>font태그</title>
+    <style>
+        mark{background-color: pink; color: white;}
+    </style>
 </head>
 <body>
+
+    <!-- ★inline 속성 태그와 block 속성 태그의 부모 & 자식 사용 방법
+         block 속성의 태그의 자식으로 inline & block 태그를 모두 사용이 가능합니다.
+         단, 반대로 inline 태그의 자식으로 block 속성의 태그를 사용할 수 없습니다. (inline태그 속성만 사용 가능)
+         CSS로 속성을 변경하는 것과 무관하며 오로지 태그가 default로 가지고 있는 속성에만 기준합니다.
+         ★예외★
+         h1태그는 block 속성임에도 자식으로 inline 요소의 태그만 사용할 수 있습니다. block 요소 사용 불가능
+    -->
+
+
 
     <!-- h태그
          1~6번까지 존재하는 태그이며 반복적으로 사용이 가능합니다. 
@@ -22,5 +35,97 @@
     <h5>h태그5</h5>
     <h6>h태그6</h6>
   <!-- h1태그에 img태그를 넣으면 h1태그의 크기만큼 커질까? -->
+<hr>
+  <!-- 등용문으로서 텍스트 영역 & 일부 영역을 감싸고자 할대 사용 하며 default로 margin 영역을 가지고 있다(많이 사용) -->
+  <p>
+      Lorem ipsum dolor sit amet.
+  </p>
+<!-- margin 영역은 웹 사이트를 코딩할때 한 방향만 정해서 사용하는 걸 권장(위 혹은 아래 중 아래를 권장) -->
+<hr>
+
+<!-- 단순하게 텍스트를 굵게 표시 -->
+<!-- font-wight: bold와 동일 -->
+<b>Lorem ipsum dolor sit amet consectetur.</b>
+<br>
+<!-- 강조, 위험 등 해당 텍스트를 강조하고자 할 때 사용하며 default로 굵게 표시됨 -->
+<!-- 태그 자체에 의미가 있다. -->
+<strong>Lorem ipsum dolor sit amet consectetur.</strong>
+
+<hr>
+
+<!-- 이텔릭체 = 텍스트를 오른쪽으로 살짝 기울게 한 글씨체
+     i = italic 의미
+-->
+<i>Lorem ipsum dolor sit amet consectetur.</i>
+<br>
+<!-- em = i태그와 동일한 표현방식이지만 강조의 의미를 가지고 있습니다.
+        즉, 태그자체에 의미가 있다.  
+-->
+<em>Lorem ipsum dolor sit amet consectetur.</em>
+
+<hr>
+
+<!-- 콘텐츠를 전달하는 목적의 텍스트를 사용 / default = 쌍따움표로 표시됨 -->
+<q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</q>
+<hr>
+
+<!-- blockquote -->
+<blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing.</blockquote>
+<hr>
+<!-- mark : HTML5 태그 /  -->
+<!-- 비쥬얼적인 태그를 감소하는 추세임을 생각하면 특이한 케이스 -->
+<!-- 시각적으로 강조하는 태그이며 강조의 의미를 가지고 잇는 태그 -->
+<mark>Lorem ipsum dolor sit amet.</mark>
+
+<hr>
+<!-- span : text를 감싸는 용도롤 사용 default : X   굉장히 많이 자주 사용하는 태그 / 거의 텍스트만 사용-->
+<span>Lorem, ipsum dolor.</span>Lorem ipsum dolor sit amet.
+<hr>
+
+<!-- ruby - ruby 언어와 무관합니다. 동아시아 텍스트의 부연설명으로 사용되는 태그/ 거의 사용 안합니다. -->
+<!-- 당시 영국에서는 활자 크기에 따라서 보석의 이름을 붙였습니다. 그래서 위에 있는 작은 텍스트인 5.5 포인트에 해당하는 이름이 루비 -->
+<!-- 영국에서 HTML 만들었다 팀 버너스리가 만들었습니다. -->
+
+<ruby>
+    大韓民國 <rt>대한민국</rt>
+</ruby>
+<hr>
+
+<!-- del - 텍스트를 취소했건 취소하려고 할 때 사용 -->
+<del>Lorem, ipsum dolor sit amet consectetur adipisicing.</del>
+
+<hr>
+
+<!-- ins - 문서의 텍스트 하단에 밑줄 표시/ 강조의 의미  
+          inline요소임
+-->
+<ins>Lorem ipsum dolor sit amet consectetur adipisicing.</ins>
+<hr>
+<!-- sup & sub - 자주 사용됩니다. 주로 텍스트가 많은 사이트에서 해당 단어를 설명해줄 때 사용 -->
+Lorem ipsum dolor sit. <sup><a href="#">[1]</a></sup> <br>
+Lorem ipsum dolor sit. <sub>아래첨자가 표시</sub>
+<hr>
+<!-- 특수문자 -->
+<!-- 엔티티(entity) : html에서 예약된 문자-->
+<!-- 엔티티 사용방법 : 숫자표현 & 문자표현 -->
+
+<p>
+    !@#$%^&*()-_=+
+    ★ 권장하지 않음
+</p>
+<hr>
+<p>
+    &#60;중요합니다&gt;
+</p>
+<!-- 크롬기준 쿠기 삭제 단축키 : 컨트롤+쉬프트+R -->
+
+
+
+
+
+
+
+
+
 </body>
 </html>
