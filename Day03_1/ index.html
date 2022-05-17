@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스의 여백</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div></div>
+    <ul>
+        <!-- 친자식으로 반드시<li>만 작성가능 li태그를 안쓰면 웹표준에 어긋남 -->
+            <!-- li 태그는 block요소이며 자식으로 어떤 태그든 작성 가능 -->
+        <li>
+            <div><a href="#"></a></div>
+            <span></span>
+        </li>
+    </ul>
+<ul></ul>  <!-- 순서가 존재하는 않는 리스트 -->
+<ol></ol>  <!-- 순서가 존재하는 리스트 --> 
+<dl></dl>  <!-- 단어설명할때 쓰임 잘 사용하지 않음 -->
+<!-- ====================================== -->
+<ul class="box_wrap">
+    <li class="box1"></li>
+    <li class="box2"></li>
+</ul>
+<div class="box_wrap2"></div>
+
+    
+</body>
+</html>
