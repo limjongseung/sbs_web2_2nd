@@ -1,0 +1,64 @@
+* {margin: 0;padding: 0;box-sizing: border-box;}
+ol,ul,dl {list-style: none;}
+
+ul {
+    width: 720px;
+    background-color: pink;
+    overflow: hidden;
+}
+
+ul > li {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 50px;
+    /* 공중에 떠있기 때문에 margin collapse현상이 없음 */
+    margin: 10px;
+    float: left;
+}
+
+ul > li:nth-child(4){
+    background-color: tomato;
+}
+
+/* nth-child의 n은 "배수"를 의미합니다. */
+ul > li:nth-child(10n){
+    background-color: orange;
+}
+/* 21번째부터 생기는 그 모든 형제들을 선택합니다. */
+ul > li:nth-child(n+21){
+    background-color: yellow;
+}
+/* 14번째 부터 ~ 18번째까지의 형제들만 선택합니다. */
+ul > li:nth-child(n+14):nth-child(-n+18){
+    background-color: green;
+}
+
+/* 
+              ***** tag < class < id < JavaScript *****
+   ***** 코드를 아래 쓸수록 우선권 < 선택자 갯수에 따라 우선권*****
+*/
+
+
+/* 홀수 형제들만 선택합니다. */
+ul >li:nth-child(odd){
+    background-color: blue;
+}
+/* 짝수 형제들만 선택합니다. */
+ul > li:nth-child(even){
+    background-color: violet;
+}
+/* last = 역으로 맨 마지막 선택자부터 카운팅합니다. */
+ul > li:nth-last-child(3){
+    background-color: black;
+}
+/* 무조건 첫번재 형제를 선택 */
+ul > li:first-child {
+    background-color: skyblue;
+}
+
+/* 무조건 마지말 형제를 선택합니다. */
+ul > li:last-child{
+    background-color: olive ;
+}
