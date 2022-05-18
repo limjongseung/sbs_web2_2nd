@@ -61,8 +61,8 @@ ul {list-style: none;}
     width: 200px;
     height: 200px;
     background-color: tomato;
-    /* margin: 100; */
-    padding-top: 100px;
+    margin-top: 100px;
+    /* padding-top: 100px; */
 }
 .box_wrap .box2{
     width: 200px;
