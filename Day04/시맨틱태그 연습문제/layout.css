@@ -1,0 +1,99 @@
+/* reset */
+* {margin: 0;padding: 0;box-sizing: border-box;}
+ol,ul,dl {list-style: none;}
+a{text-decoration: none;}
+body {
+    background: #3c3a3b;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    /*
+     @font-face
+     -영문이랑 국문 생각해야합니다.
+     -국문은 영문 폰트 용량의 2배이상이기 때문입니다.
+     -웬만하면 하나의 사이트에서는 1개 이상의 국문 폰를 사용하지 않습니다.
+     -알아야하는 이유는 모든회사가 저작권이 없는 폰트만 사용하는게 아니기 때문입니다.
+     */
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* common tag End */
+.inner {
+     width: 1100px;
+     margin: 0 auto; 
+}
+/* common class End */
+
+#header {
+    background: #3c3a3b;
+}
+#header .inner {
+    padding: 20px 0px;
+}
+#header h1 {
+    float: left;
+    font-size: 0;
+}
+
+#header nav {
+    float: right;
+}
+#header nav > ul{}
+#header nav > ul > li{
+    /* 부모인nav가 float : right 로 위치를 오른쪽으로 배치 받았기
+    때문에 float : left 를 줘도 왼쪽으로 가지않고 오른쪽으로 갑니다. */
+    float: left;
+    margin-left: 10px;
+}
+#header nav > ul > li > a{
+    color: #fff;
+}
+.visual{
+    text-align: center;
+    background: url(img/bg.png);
+    margin-bottom: 40px;
+    /* margin은 위에서 아래로 */
+}
+.container {
+    margin-bottom: 40px;
+}
+.container .banner{
+    width: 300px;
+    height: 500px;
+    background: black;
+    line-height: 500px;
+    float: left;
+
+}
+.container .main{
+    background: black;
+    float: right;
+    padding: 20px 15px;
+}
+.container .main > article{
+    width: 750px;
+    height: 140px;
+    background: #3d3d3d;
+    margin-bottom: 20px;
+    line-height: 140px;
+}
+.container .main > article:last-child {
+    /*
+      가상선택자로 마지막이나 처음 형제의 여백을 취소할 때
+      반드시 그 취소하는 방향을 정해서 취소해주시기를 권장합니다.
+     */
+    margin-bottom: 0;
+}
+
+#footer {}
+#footer .inner{
+    background: black;
+    padding: 15px 0;
+    font-size: 20px;
+}
