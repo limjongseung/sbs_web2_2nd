@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시멘틱태그 연습</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <!-- 
+        헤더와 푸터에는 id를 설정해놓는 것이 좋음
+        id가 css에서 우선권을 가지기 때문에
+        종료대그에는 주석으로 달아놓기
+     -->
+
+    <header id="header" >
+        <div class="inner clearfix">
+        <h1 class="logo">
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+        </h1>
+        <nav>
+                <ul class="clearfix">
+                    <li><a href="#">MODERNISM</a></li>
+                    <li><a href="#">POSTMODERNISM</a></li>
+                    <li><a href="#">CONTEMPORARY</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><!-- header End -->
+    
+    <article class="bg">
+        <img src="img/img.png" alt="이미지">
+    </article>
+<div class="container">
+    <div class="inner clearfix">
+        <aside class="banner">aside</aside>
+        <section class="main">
+            <article>article</article>
+            <article>article</article>
+            <article>article</article>
+        </section>
+    </div>
+</div> <!-- container END -->
+<footer id="footer">
+    <div class="inner">
+        copyright &#169; sbs
+    </div>
+</footer><!-- footer END -->
+    
+</body>
+</html>
