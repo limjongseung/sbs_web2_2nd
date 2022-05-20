@@ -36,7 +36,7 @@ ul > li:nth-child(n+14):nth-child(-n+18){
 }
 
 /* 
-              ***** tag < class < id < JavaScript *****
+         ***** tag < class < id < JavaScript *****
    ***** 코드를 아래 쓸수록 우선권 < 선택자 갯수에 따라 우선권*****
 */
 
