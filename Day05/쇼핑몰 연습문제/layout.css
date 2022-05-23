@@ -1,0 +1,131 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ol, ul, dl {list-style: none;}
+a {text-decoration: none;}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inner{
+    width: 1250px;
+    margin: 0 auto;
+      /* 
+       margin: 0 auto; 는
+       해당 선택자가 반드시 width값을 존재해야합니다.
+     */
+}
+
+#header{}
+#header .inner{
+    height: 60px;
+    padding: 10px 0px;
+    /* margin: 0 auto; */
+    /* 
+       margin: 0 auto; 는
+       해당 선택자가 반드시 width값을 존재해야합니다.
+     */
+    width: 1350px;
+}
+#header .logo{}
+#header .logo{
+    float: left;
+    margin-right: 100px;
+}
+
+#header nav{
+    float: left;
+    width: 1000px;
+    padding-top: 10px;
+}
+#header nav ul{}
+#header nav ul > li{
+    float: left;
+    margin-right: 45px;
+}
+#header nav ul > li > a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #989898;
+    font-family: 'Work Sans', sans-serif;
+    /* 
+       폰트 굵기
+       100 : Thin
+       300 : Light
+       400 : Regular
+       500 : Medium
+       600 : Bold
+       800 : Extra Bold
+    */
+}
+/* header END */
+
+.main {
+    /* img는 inline요소이기에 text-align: center;로 중앙배치가 가능하다. */
+    margin-bottom: 70px;
+    text-align: center;
+}
+/* main END */
+
+.banner_box{
+    margin-bottom: 70px;
+    /* margin은 랩핑된 영역끼리 주는 것 절대 콘텐츠에 주지 말것 */
+    /* margin은 위에서 아래로~~ */
+}
+.banner_box .inner > article{
+    float: left;
+}
+.banner_box .inner > article:nth-child(2){
+    margin-right: 22px;
+    margin-left: 22px;
+}
+/* banner END */
+
+.con_box {}
+.con_box h3{
+    font-size: 30px;
+    color: #8b8b8b;
+    font-family: 'Suranna', serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.con_box h3 span {
+    color: #1b3f36;
+}
+.con_box .con_list {
+    font-size: 16px;
+    text-align: center;
+}
+.con_box .con_list >li{
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.con_box .con_list >li:nth-child(4n){
+    margin-right: 0;
+}
+.con_box .con_list > li> *{
+    margin-bottom: 10px;
+}
+.con_box .con_list >li .img_box{}
+.con_box .con_list >li h4{}
+.con_box .con_list >li p{}
+.con_box .con_list >li p:last-child{
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
