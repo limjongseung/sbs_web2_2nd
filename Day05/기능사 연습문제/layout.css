@@ -40,7 +40,9 @@ a{text-decoration: none;}
     margin-bottom: 40px;
 }
 
-#banner {}
+#banner {
+    margin-bottom: 30px;
+}
 #banner >article{
     border: 1px solid #000;
     float: left;
@@ -104,3 +106,24 @@ a{text-decoration: none;}
 }
 
 /* footer 이어서 보겠습니다. */
+
+#footer {}
+#footer .ft_logo{
+    float: left;
+}
+#footer .ft_right{
+    float: left;
+}
+#footer .ft_right ul{
+    margin-bottom: 10px;
+}
+#footer .ft_right ul > li{
+    float: left;
+    padding-left: 80px;
+}
+#footer .ft_right ul > li > a{
+    color: #000;
+}
+#footer .ft_right p{
+    text-align: center;
+}
