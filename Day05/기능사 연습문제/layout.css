@@ -74,9 +74,12 @@ a{text-decoration: none;}
 #banner .banner_1 .notic>li:nth-child(odd) {
     background: black;
 }
-#banner .banner_1 .notic>li:nth-child(odd) {}
-#banner .banner_1 .notic>li>a:nth-child(odd) {
+
+#banner .banner_1 .notic li:nth-child(odd) > a{
     color: #fff;
+}
+#banner .banner_1 .notic li:nth-child(even) > a{
+    color: #000;
 }
 
 #banner .type1 {
@@ -115,7 +118,7 @@ a{text-decoration: none;}
     float: left;
 }
 #footer .ft_right ul{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 #footer .ft_right ul > li{
     float: left;
