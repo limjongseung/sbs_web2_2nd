@@ -24,16 +24,38 @@ a{text-decoration: none;}
     float: right;
 }
 #header nav>ul{}
-#header nav>ul>li{
+#header nav ul li{
     width: 150px;
     float: left;
     background: rgb(39, 24, 204);
     text-align: center;
     padding: 10px 0px;
+    position: relative;
 }
-#header nav>ul>li>a{
+#header nav ul li a{
     color: #fff;
 }
+#header nav .sub {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 41px;
+    transition: height 0.5s;
+}
+#header nav ul li:hover .sub {
+    height: 123px;
+}
+
+
+
+
+
+
+
+
+
+
 
 #ad_1 {
     height: 300px;
@@ -41,7 +63,9 @@ a{text-decoration: none;}
 }
 
 #banner {
-    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom:1px solid gray ;
+    margin-bottom: 20px;
 }
 #banner >article{
     border: 1px solid #000;
@@ -113,16 +137,18 @@ a{text-decoration: none;}
 #footer {}
 #footer .ft_logo{
     float: left;
+    margin-right: 50px;
 }
 #footer .ft_right{
     float: left;
 }
 #footer .ft_right ul{
-    margin-bottom: 5px;
+    width: 1000px;
+    margin-bottom: 50px;
 }
 #footer .ft_right ul > li{
     float: left;
-    padding-left: 80px;
+    margin-right: 80px;
 }
 #footer .ft_right ul > li > a{
     color: #000;
