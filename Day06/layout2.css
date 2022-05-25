@@ -1,0 +1,44 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ol,dl,ul {list-style: none;}
+
+.header{
+    background: tomato;   
+    display: flex;
+    padding: 20px;
+}
+
+.header .logo{
+    margin-right: 20px;
+}
+
+.header .gnb {
+    padding: 20px;
+    background: gray;
+    margin-left: auto;
+}
+
+.header .search {
+    display: flex;
+    padding: 15px 0;
+}
+
+.header input{
+    margin-right: 5px;
+    flex: 1;
+    padding-left: 10px;
+    outline: none;
+}
+.header input:active,
+.header input:focus {
+    border: 2px solid blue;
+}
+
+.header .search button {
+    width: 100px;
+    cursor: pointer;
+    background: #fff;
+    color: blue;
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
