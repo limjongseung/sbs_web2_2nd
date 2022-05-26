@@ -6,10 +6,8 @@ a{text-decoration: none;}
 
 
 
-
 #header {
-    background: url(main_bg.jpg) no-repeat center center;
-    background-size: cover;
+    background-image: url(main_bg.jpg);
     text-align: center;
     color: #fff;
     margin-bottom: 70px;
