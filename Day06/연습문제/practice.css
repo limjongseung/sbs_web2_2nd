@@ -1,0 +1,75 @@
+/* reset */
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ol,ul,dl { list-style: none;}
+a{text-decoration: none;}
+
+
+
+
+
+#header {
+    background: url(main_bg.jpg) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 70px;
+}
+#header .header_box{
+    padding: 150px 0px;
+}
+#header .logo{
+    font-size: 60px;
+    margin-bottom: 60px;
+    font-weight: 300;
+}
+#header p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.title {
+    margin-bottom: 50px;
+    font-size: 28px;
+    color: #9d9d9d;
+    font-weight: 300;
+}
+.content_wrap{
+    width: 960px;
+    margin: 0 auto;
+}
+.content_box{
+}
+.content_box ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content_box ul > li{
+    margin-right: 40px;
+    margin-bottom: 60px;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content_box ul > li:nth-child(4n){
+    margin-right: 0;
+}
+.content_box ul > li .imgbox{}
+.content_box ul > li .imgbox img{}
+.content_box ul > li p{
+    font-size: 20px;
+    color: #0075d8;
+    margin-bottom: 10px;
+    flex: 1;
+    
+}
+.content_box ul > li button{
+    height: 36px;
+    background:#fff;
+    border: 1px solid #B8CCEF ;
+}
+.content_box ul > li button a{
+    font-size: 14px;
+    font-weight: bold;
+    color: #4E69DB;
+}
