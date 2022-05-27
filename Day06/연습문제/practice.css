@@ -37,8 +37,7 @@ a{text-decoration: none;}
     width: 960px;
     margin: 0 auto;
 }
-.content_box{
-}
+
 .content_box ul{
     display: flex;
     justify-content: space-between;
@@ -52,8 +51,6 @@ a{text-decoration: none;}
     justify-content: space-between;
 }
 
-.content_box ul > li .imgbox{}
-.content_box ul > li .imgbox img{}
 .content_box ul > li p{
     font-size: 20px;
     color: #0075d8;
