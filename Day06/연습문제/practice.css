@@ -8,16 +8,18 @@ a{text-decoration: none;}
 
 #header {
     background-image: url(main_bg.jpg);
-    text-align: center;
     color: #fff;
     margin-bottom: 70px;
 }
 #header .header_box{
-    padding: 150px 0px;
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 #header .logo{
     font-size: 60px;
-    margin-bottom: 60px;
     font-weight: 300;
 }
 #header p{
@@ -39,19 +41,17 @@ a{text-decoration: none;}
 }
 .content_box ul{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .content_box ul > li{
-    margin-right: 40px;
     margin-bottom: 60px;
     width: 210px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.content_box ul > li:nth-child(4n){
-    margin-right: 0;
-}
+
 .content_box ul > li .imgbox{}
 .content_box ul > li .imgbox img{}
 .content_box ul > li p{
