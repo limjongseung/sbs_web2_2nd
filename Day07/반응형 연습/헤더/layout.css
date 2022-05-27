@@ -1,0 +1,4 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ol, ul ,dl {list-style: none;}
+a {text-decoration: none;color: inherit;}
+/* inherit: 부모에게서 속성을 상속받는다 */
