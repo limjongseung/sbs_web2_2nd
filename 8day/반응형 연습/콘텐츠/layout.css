@@ -43,12 +43,83 @@ body{
 .card_container ul > li{
     width:25%;
     margin-bottom:40px;
+    padding: 0px 20px;
+    transition: all 0.35s;
 }
 
+.card_container ul > li *{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card_container ul > li *:last-child{
+    margin-bottom: 0;
+}
+/* 선택자의 길이에 따라 우선순위가 밀릴 가능성이 있다. */
 .card_container ul > li img{
     width:100%;
     max-width:296px;
 }
+.card_container ul > li h3{
+    font-size: 24px;
+}
+
+
+#footer{
+    background: #333;
+}
+#footer .inner{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 10px 30px 30px;
+}
+
+#footer .ft_con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#footer .ft_con .ft_logo {}
+
+#footer .ft_con ul{
+    display: flex;
+}
+
+#footer .ft_con ul>li{
+    margin-left: 30px;
+    font-size: 14px;
+}
+#footer .ft_con ul>li>a{
+    transition: color 0.35s;
+}
+#footer .ft_con ul> li > a:hover {
+    color: tomato;
+}
+
+#footer .copy{
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:1299px) {
     .card_container ul > li{
@@ -59,6 +130,22 @@ body{
 @media screen and (max-width:899px) {
     .card_container ul > li{
         width:50%;
+    }
+    #footer .ft_con{
+        flex-direction: column;
+    }
+    #footer .ft_logo{
+        margin-bottom: 20px;
+    }
+    #footer .ft_con ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    #footer .ft_con ul > li{
+        margin-bottom: 10px;
+    }
+    #footer .ft_con ul > li:last-child {
+        margin-bottom: 0;
     }
 }
 @media screen and (max-width:599px) {
