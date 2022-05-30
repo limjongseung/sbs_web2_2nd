@@ -59,13 +59,13 @@ div{
 /* not 연산자 */
 /* not = not 뒤에 지정하는 미디어 유형은 제외 */
 /* 1000px ~ 1100px를 제외한 나머지에게 css 스타일 적용 */
-@media not screen and (min-width:1000px) and (max-width:1100px) {
+/* @media not screen and (min-width:1000px) and (max-width:1100px) {
     div{
         width:100px;
         height:100px;
         background:blue;
     }
-}
+} */
 
 /* 최소 반응형 레이아웃 width */
 
