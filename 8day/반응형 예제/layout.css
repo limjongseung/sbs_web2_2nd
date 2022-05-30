@@ -13,8 +13,8 @@ body {
 }
 
 .card {
-    width: 100px;
-    height: 100px;
+    width: 99px;
+    height: 99px;
     background: rgba(0, 0, 255, 0.5);
     transition: all 0.5s;
 }
@@ -37,5 +37,39 @@ body {
 .type3 .card{
     transform-origin: 100% 100% ;
 }
+
+
+/* ------------------------------------------------------------------ */
+
+
+/* 
+   perspective
+   원근감 & 원근법이라고 합니다.
+   부모와 하위 요소간의 원근감 거리를 설정
+   속성 값으로 숫자를 입력하여 px, em, 등이 단위를 사용 가능
+   사용은 원근감이 표시되는 대상의 친부모에게 사용
+*/
+
+.type4 {
+    perspective: 100px;
+}
+.type4:hover .card{
+    transform: rotateX(300deg);
+}
+.type5{
+    perspective: 200px;
+}
+.type5:hover .card{
+    transform: rotateY(300deg);
+}
+
+.type6{
+    perspective: 200px;
+    overflow: hidden;
+}
+.type6:hover .card {
+    transform: rotateY(20deg);
+}
+
 
 
