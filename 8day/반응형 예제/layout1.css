@@ -10,7 +10,22 @@ h1,h2,h3,h4,h5,h6 {font-weight: 400; text-transform: uppercase; color: #3f51b5;}
     padding: 0px 50px; margin: 0 auto;
 }
 
+/* 
+   block 요소의 특징
+   float 나 position:absolute, fixed 같이 2층 혹은
+   공중에 뜨는 css속성을 받으면 default로 들어가있는 
+   width:100% 기능이 삭제되기 때무에 직접 주거나 혹은 
+   자식 요소의 크기를 받아갑니다.
+*/
+
 #header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /* positon을 주는 경우 페이지 z-index순서를 따지기 때문에 z-index값을 꼭 주어야함 */
+    width: 100%;
+    background: #fff;
     color: #3f51b5;
     box-shadow: 0 1px 10px gray;
 }
@@ -40,7 +55,10 @@ h1,h2,h3,h4,h5,h6 {font-weight: 400; text-transform: uppercase; color: #3f51b5;}
 
 /* header END */
 
-#visual {}
+#visual {
+    margin-bottom: 100px;
+    padding-top: 86px;
+}
 #visual img{
     display: block;
     width: 100%;
@@ -49,7 +67,11 @@ h1,h2,h3,h4,h5,h6 {font-weight: 400; text-transform: uppercase; color: #3f51b5;}
 
 /* visual END */
 
-#academy {}
+#academy {
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    border-bottom: 2px solid #eee;
+}
 #academy .academy_tit{
     display: flex;
     justify-content: space-between;
@@ -93,6 +115,95 @@ h1,h2,h3,h4,h5,h6 {font-weight: 400; text-transform: uppercase; color: #3f51b5;}
 #academy .academy_promotion ul > li > a p {
     font-size: 14px;
 }
+#academy .academy_promotion ul > li > a img{
+    height: 52px;
+}
+
+#company {
+    position: relative;
+    margin-bottom: 100px;
+    padding-bottom: 102px;
+}
+#company::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 2px;
+    background: #3f51b5;
+}
+#company .inner{
+    min-width: 1800px;
+}
+#company h2{
+    width: 100px;
+    min-width: 1200px;
+    margin: 0 auto 70px;
+    font-size: 42px;
+}
+#company ul{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+#company ul > li{
+    position: relative;
+    width: 25%;
+}
+#company ul > li > a{
+    display: block;
+    font-size: 0;
+
+}
+#company ul > li >a > img{
+}
+
+
+#company ul > li >a  .hover_box {
+    position: absolute;
+    left: 0;
+    /* top: 0; */
+    top: -30px;
+    width: 100%;
+    height: 100%;
+    background: rgba(63, 81, 181, 0.85);
+    padding: 30px 40px;
+    transition: all 0.35s;
+    opacity: 0;
+}
+#company ul > li >a  .hover_box h3 {
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+#company ul > li >a  .hover_box p {
+    font-size: 16px;
+    color: #fff;
+}
+#company ul > li:hover a .hover_box{
+    top: 0;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
