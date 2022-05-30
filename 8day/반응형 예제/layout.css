@@ -1,0 +1,41 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body {
+    padding: 50px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border: 1px solid #000;
+    margin-bottom: 100px;
+    /* transform-origin: ; */
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 255, 0.5);
+    transition: all 0.5s;
+}
+
+/* 
+   할 수 있다면 부모에게 hover 거는게 좋습니다.
+*/
+.box:hover .card{
+    transform: rotate(45deg);
+
+}
+/* ----------------------------------------------------------------------------- */
+
+
+.type2 .card{
+    transform-origin: left top;
+    /* transform-origin: right bottom; */
+}
+
+.type3 .card{
+    transform-origin: 100% 100% ;
+}
+
+
