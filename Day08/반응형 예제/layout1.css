@@ -123,6 +123,7 @@ h1,h2,h3,h4,h5,h6 {font-weight: 400; text-transform: uppercase; color: #3f51b5;}
     position: relative;
     margin-bottom: 100px;
     padding-bottom: 102px;
+    /* height값 2px 추가 */
 }
 #company::before{
     content: "";
@@ -186,16 +187,105 @@ h1,h2,h3,h4,h5,h6 {font-weight: 400; text-transform: uppercase; color: #3f51b5;}
     top: 0;
     opacity: 1;
 }
+/* company END */
 
 
+#about{
+    margin-bottom: 100px;
+}
+#about .inner{
+    display: flex;
+    justify-content: space-between;
+}
+#about h2{}
+#about .banner_wrap{
+    width: 75%;
+}
+#about .banner_wrap ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+#about .banner_wrap ul> li {
+    width: 32%;
+}
+
+#about .banner_wrap ul> li img{
+    width: 100%;
+}
+
+#about .banner_wrap ul> li p{
+    font-size: 11px;
+    margin: 10px 0;
+}
+#about .banner_wrap ul> li h3{
+    font-size: 16px;
+    color: #424242;
+    line-height: 1.7;
+}
+
+/* about END */
+
+#contact {}
+#contact .inner{
+    display: flex;
+    justify-content: space-between;
+}
+#contact h2{}
+#contact .form_box{
+    width: 75%;
+}
+#contact .form_box fieldset{
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+#contact .form_box fieldset .input_box{
+    width: 45%;
+
+}
+#contact .form_box fieldset .text_box{
+    width: 50%;
+}
+#contact .form_box fieldset .input_box input,
+#contact .form_box fieldset .text_box textarea{
+    width: 100%;
+    border: 1px solid transparent;
+    /* border 1px를 투명으로 넣어놓으면 나중에 border 1px 이 생기면서 덜컹거리는 것을 방지함 */
+    border-bottom: 1px solid #757575;
+    color: #3f51b5;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    /* input box 안에 있는 요소는 속성값을 상속받지 않는다. */
+    outline: none;
+}
+#contact .form_box fieldset .input_box input {
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-left: 15px;
+}
+#contact .form_box fieldset .input_box input:last-child{
+    margin-bottom: 0;
+}
+
+#contact .form_box fieldset .text_box textarea{
+    height: 100%;
+    padding: 15px;
+}
 
 
-
-
-
-
-
-
+#contact .form_box fieldset .input_box input::placeholder,
+#contact .form_box fieldset .text_box textarea::placeholder{
+    color: #3f51b5;
+}
+/* focus 와 active는 동시에 써주시는게 좋습니다. */
+#contact .form_box fieldset .input_box input:focus,
+#contact .form_box fieldset .input_box input:active,
+#contact .form_box fieldset .text_box textarea:focus,
+#contact .form_box fieldset .text_box textarea:active{
+    border: 1px solid #3f51b5;
+    border-radius: 5px;
+}
 
 
 
