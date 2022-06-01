@@ -271,93 +271,6 @@ h1,h2,h3,h4,h5,h6 {font-weight: 400; text-transform: uppercase; color: #3f51b5;}
 }
 
 /* about END */
-@media all and (max-width:1199px){
-
-    #academy .academy_tit{
-        flex-direction: column;
-        display:none;
-    }
-    #academy h2 {
-        margin-bottom: 70px;
-    }
-    #academy p::before {
-        display: none;
-    }
-
-    #company{
-        padding-bottom: 50px;
-        margin-bottom: 50px;
-    }
-    #company ul{
-        width: 50%;
-    }
-    #company ul > li{}
-    #about {}
-    #about .inner {
-        flex-direction: column;
-    }
-    #about h2{
-        margin-bottom: 50px;
-        display:none;
-    }
-    #about .banner_wrap {
-        width: 100%;
-    }
-}
-
-
-@media all and (max-width: 799px){
-    #header .inner {
-        padding: 20px 50px;
-    }
-    #header .gnb ul{
-        display: none;
-    }
-    #header .hamburger{
-        display: block;
-    }
-    /* 위에서 아래로 코드를 읽는다 */
-    #visual {
-        padding-top: 66px;
-    }
-
-    #academy {
-        margin-bottom: 50px;
-        padding-bottom: 50px;
-    }
-
-    #academy .academy_promotion ul {
-        flex-direction: column;
-    }
-    #academy .academy_promotion ul>li {
-        width: 100%;
-        margin-bottom: 40px;
-    }
-    #academy .academy_promotion ul>li:last-child {
-        margin-bottom: 0;
-    }
-    #academy .academy_promotion ul>li p {
-        line-height: 1.7;
-    }
-    #company ul > li {
-        width: 100%;
-        margin-bottom: 40px;
-    }
-    #company ul > li:last-child{
-        margin-bottom: 0;
-    }
-    #about .banner_wrap{}
-    #about .banner_wrap ul {
-        flex-direction: column;
-    }
-    #about .banner_wrap ul > li{
-        width: 100%;
-        margin-bottom: 40px;
-    }
-    #about .banner_wrap ul > li:last-child{
-        margin-bottom: 0;
-    }
-}
 
 
 #contact {
@@ -462,6 +375,128 @@ h1,h2,h3,h4,h5,h6 {font-weight: 400; text-transform: uppercase; color: #3f51b5;}
 
 
 
+@media all and (max-width:1199px){
+
+    #academy .academy_tit{
+        flex-direction: column;
+        display:none;
+    }
+    #academy h2 {
+        margin-bottom: 70px;
+    }
+    #academy p::before {
+        display: none;
+    }
+
+    #company{
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+    #company ul{
+        width: 50%;
+    }
+    #company ul > li{}
+    #about {}
+    #about .inner {
+        flex-direction: column;
+    }
+    #about h2{
+        margin-bottom: 50px;
+        display:none;
+    }
+    #about .banner_wrap {
+        width: 100%;
+    }
+    #contact .inner{
+        flex-direction: column;
+    }
+    #contact h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #contact .form_box{
+        width: 100%;
+    }
+}
+
+
+@media all and (max-width: 799px){
+    #header .inner {
+        padding: 20px 50px;
+    }
+    #header .gnb ul{
+        display: none;
+    }
+    #header .hamburger{
+        display: block;
+    }
+    /* 위에서 아래로 코드를 읽는다 */
+    #visual {
+        padding-top: 66px;
+    }
+
+    #academy {
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+
+    #academy .academy_promotion ul {
+        flex-direction: column;
+    }
+    #academy .academy_promotion ul>li {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #academy .academy_promotion ul>li:last-child {
+        margin-bottom: 0;
+    }
+    #academy .academy_promotion ul>li p {
+        line-height: 1.7;
+    }
+    #company ul > li {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #company ul > li:last-child{
+        margin-bottom: 0;
+    }
+    #about .banner_wrap{}
+    #about .banner_wrap ul {
+        flex-direction: column;
+    }
+    #about .banner_wrap ul > li{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #about .banner_wrap ul > li:last-child{
+        margin-bottom: 0;
+    }
+    #contact .form_box fieldset {
+        flex-direction: column;
+    }
+    #contact .form_box fieldset .input_box,
+    #contact .form_box fieldset .text_box{
+        width: 100%;
+    }
+    #contact .form_box fieldset .input_box input:last-child{
+        margin-bottom: 40px;
+    }
+    #contact .form_box fieldset .text_box textarea{
+        height: 150px;
+    }
+    #contact .form_box .send_btn button {
+        width: 100%;
+    }
+
+    #footer iframe {
+        height: 300px;
+    }
+
+    #footer .copy {
+        padding: 20px 0px;
+    }
+
+}
 
 
 
