@@ -1,0 +1,70 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ol,ul,dl {list-style: none;}
+
+.header {
+    background: tomato;
+    display: flex;
+    padding: 20px;
+}
+
+.header .logo {
+margin-right: 20px;
+}
+
+.header .gnb {
+    padding: 20px;
+    background: gray;
+    margin-left: auto;
+    /* 
+        margin-left : auto; 
+        왼쪽의 여백을 끝까지 준다
+     */
+}
+
+.header .search {
+    display: flex;
+    padding: 15px 0px;
+}
+
+.header input{
+    margin-right: 5px;
+    flex: 2;
+    padding-left: 10px;
+    outline: none;
+}
+
+.header input:active,
+.header input:focus {
+    border: 2px solid blue;
+    /* :active 와 :focus 는 같이 잡는것이 좋습니다. */
+}
+
+.header .search button {
+    width: 100px;
+    cursor: pointer;
+    background: #fff;
+    color: blue;
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
