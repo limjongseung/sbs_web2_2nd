@@ -64,6 +64,7 @@ a {text-decoration: none; color: inherit;}
     height: 21px;
     cursor: pointer;
     transition: right 0.5s;
+    /* transitoin의 방향을 지정할 수도 있다. */
 }
 #header .hamburger span{
     position: relative;
