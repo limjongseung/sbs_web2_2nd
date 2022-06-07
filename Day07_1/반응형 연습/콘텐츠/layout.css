@@ -1,0 +1,108 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+a {text-decoration: none; color: inherit;}
+/* 색상은 상속 받는다 원래 a 속성은 상속받지 않음 */
+ol,ul,dl {list-style: none;}
+
+body {font-family: 'Titillium Web', sans-serif;}
+
+
+.main{
+    height: 80vh;
+    background: black url(img/visual_bg.jpg) no-repeat top center fixed;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    /* 
+       background-cover
+       : full-page 만들 때 유용하게 사용
+    */
+
+    text-align: center;
+    margin-bottom: 70px;
+    text-transform: capitalize;
+}
+.main h2{
+    font-size:50px;
+    margin-bottom: 30px;
+}
+
+.card_container {}
+.card_container .inner{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+.card_container ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card_container ul>li{
+    width: 25%;
+    text-align: center;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+.card_container ul>li div{}
+.card_container ul>li div a{}
+.card_container ul>li div a img{
+    width: 100%;
+    max-width: 296px;
+}
+.card_container ul>li h3{}
+.card_container ul>li p{}
+
+@media screen and (max-width : 1299px) {
+    .card_container ul > li {
+        width: 33.3333%;
+    }
+}
+@media screen and (max-width  : 899px) {
+    .card_container ul > li {
+        width: 50%;
+    }
+}
+@media screen and (max-width  : 599px) {
+    .card_container ul > li {
+        width: 100%;
+    }
+    .main {
+        /* font-size: 20px; */
+    }
+    .main h2 {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
