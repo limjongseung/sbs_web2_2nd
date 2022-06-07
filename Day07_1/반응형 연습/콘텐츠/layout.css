@@ -54,6 +54,86 @@ body {font-family: 'Titillium Web', sans-serif;}
 }
 .card_container ul>li h3{}
 .card_container ul>li p{}
+/* card_container END */
+
+
+#footer {
+    background: #333;
+
+}
+#footer .inner{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 14px;
+    
+}
+#footer .ft_con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#footer .ft_logo{}
+#footer .ft_logo a{}
+#footer .ft_con ul{
+    display: flex;
+    justify-content: space-between;
+}
+#footer .ft_con ul >li{
+    margin-left: 30px;
+}
+#footer .ft_con ul >li a:hover{
+    color: tomato;
+}
+#footer .ft_con ul >li a {
+    transition: color 0.5s;
+}
+#footer .copy{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width : 1299px) {
     .card_container ul > li {
